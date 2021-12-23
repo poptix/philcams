@@ -1,0 +1,58 @@
+<html><body>
+<center>
+  <!-- Duplicate as needed for more cameras -->
+  <video id="video" autoplay muted playsinline height="100%"></video>
+  <video id="video2" autoplay muted playsinline height="100%"></video>
+</center>
+ <script src="hls.min.js"></script>
+ <script type="text/javascript">
+
+    // Begin camera 0 
+    var video = document.getElementById("video");
+    var videoSrcInHls = "http://your.public.ip.here:8181/stream/0/index.m3u8";
+
+    if(Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(videoSrcInHls);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+      });
+        video.play();
+    }
+
+    function addSourceToVideo(element, src, type) {
+      var source = document.createElement('source');
+      source.src = src;
+      source.type = type;
+      element.appendChild(source);
+    }
+    // End camera 0
+
+
+    // Begin camera 1
+    var video = document.getElementById("video2");
+    var videoSrcInHls = "http://your.public.ip.here:8181/stream/1/index.m3u8";
+
+    if(Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(videoSrcInHls);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+      });
+        video.play();
+    }
+
+    function addSourceToVideo(element, src, type) {
+      var source = document.createElement('source');
+      source.src = src;
+      source.type = type;
+      element.appendChild(source);
+    }
+    // End camera 1
+
+    // Duplicate as necessary. You only have to update the video url and the video element ID (not variables for each) 
+  </script>
+</body></html>
+
