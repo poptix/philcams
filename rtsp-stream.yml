@@ -1,0 +1,22 @@
+version: 1.0
+endpoints:
+  start:
+    enabled: true
+  static:
+    enabled: true
+  stop:
+    enabled: true
+    secret: qerfgqergqerg
+  list:
+    enabled: true
+    secret: qergeqrggerg
+
+listen:
+#  - alias: 0
+#    uri: rtsp://admin:password@192.168.1.9:554/cam/realmonitor?channel=3&subtype=1&unicast=true&proto=Onvif 
+#    enabled: true 
+#  - alias: 1
+#    uri: rtsp://admin:password@192.168.1.9:554/cam/realmonitor?channel=4&subtype=1&unicast=true&proto=Onvif 
+#    enabled: true
+# etc..
+
