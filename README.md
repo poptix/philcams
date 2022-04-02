@@ -2,7 +2,7 @@
 
 Stupid easy way to get your local security camera streams onto the Internet. 
 
-- Edit philcams.sh to add your cameras. 
+- Edit rtsp-stream.yml to add your cameras. 
 
 - Run philcams.sh 
 
