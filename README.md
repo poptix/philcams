@@ -1,3 +1,14 @@
+Highly recommend the mediamtx project. https://mediamtx.org/docs/kickoff/introduction
+
+
+Project archived. 
+
+
+
+
+
+
+
 # philcams
 
 Stupid easy way to get your local security camera streams onto the Internet. 
